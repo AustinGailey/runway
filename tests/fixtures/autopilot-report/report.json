@@ -1,0 +1,37 @@
+{
+ "v": 1,
+ "run": "autopilot-site-1791000000",
+ "repo": "/tmp/painter-site",
+ "project": "Painter site",
+ "startedAt": 1791000000,
+ "endedAt": 1791003600,
+ "wallMin": 60.0,
+ "resumed": false,
+ "stop": {
+  "reason": "cap",
+  "detail": "t-4 would cost about $0.4200 with $0.3110 left under the $1.00 cap (spent $0.6890)."
+ },
+ "cap": 1.0,
+ "spend": 0.689,
+ "remaining": 0.311,
+ "capPct": 68.9,
+ "counts": {"attempted": 3, "merged": 1, "blocked": 1, "review": 1, "running": 0, "left": 2},
+ "tasks": [
+  {"key": "t-1", "title": "Hero section", "outcome": "merged", "gate": null, "reason": null, "model": "claude-sonnet-5", "kind": "code",
+   "est": 200000, "eff": 231500, "ratio": 1.16, "usd": 0.412},
+  {"key": "t-2", "title": "Pricing | table", "outcome": "blocked", "gate": "red", "reason": "Checks failed: npm test exited 1.",
+   "model": "claude-sonnet-5", "kind": "code", "est": 150000, "eff": 98200, "ratio": 0.65, "usd": 0.211},
+  {"key": "t-3", "title": "Contact form", "outcome": "review", "gate": null, "reason": "Waiting for the merge gate.",
+   "model": "claude-haiku-4-5-20251001", "kind": "code", "est": 120000, "eff": 42000, "ratio": 0.35, "usd": 0.066}
+ ],
+ "totals": {"tasks": 3, "machine_min": 14.32, "git_merge_min": 1.87, "setup_min": 0.41, "test_min": 12.45, "merge_min": 1.46,
+            "review_min": null, "client_min": null, "retries": 1, "conflicts_resolved": 0, "human_touches": 0,
+            "est": 470000, "eff": 371700, "usd": 0.689},
+ "reconcile": {"ledgerRows": 4, "spend": 0.689, "eff": 371700, "taskSpend": 0.689, "unattributed": 0, "ok": true},
+ "attention": [
+  {"task": null, "text": "The dollar cap stopped the run: t-4 would cost about $0.4200 with $0.3110 left under the $1.00 cap (spent $0.6890)."},
+  {"task": "t-2", "text": "Blocked: Checks failed: npm test exited 1."},
+  {"task": "t-3", "text": "In review and not merged: run the autopilot again to merge it."},
+  {"task": null, "text": "Not started (2): t-4, t-5"}
+ ]
+}

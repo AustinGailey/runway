@@ -1,0 +1,6 @@
+{
+  "checks": [
+    {"name": "build", "cmd": "python3 build.py"},
+    {"name": "tests", "cmd": "./test.sh"}
+  ]
+}

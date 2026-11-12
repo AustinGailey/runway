@@ -1,0 +1,10 @@
+{
+  "settings/main": {"home": "{{HOME}}", "claudeBin": "{{CLAUDE}}", "permV": 2, "permissionMode": "acceptEdits", "worktrees": true, "verify": false, "notify": false, "fixRounds": 0, "staggerSec": 0, "maxParallel": 2, "updatedAt": 1791300000000},
+  "projects/hp1": {"name": "Harness project", "goal": "A scratch repo in the sandbox for exercising Runway end to end.", "repo": "{{REPO}}", "status": "active", "order": 1, "agentNotes": "", "wiki": "main", "worktrees": true, "requires": [], "createdAt": 1791300000000, "updatedAt": 1791300000000},
+  "pis/hpi1": {"projectId": "hp1", "name": "PI 1 · Harness", "objective": "Exercise launch, merge and land", "order": 1},
+  "sprints/hsp1": {"projectId": "hp1", "piId": "hpi1", "name": "Sprint 1", "goal": "Two small tasks", "order": 1},
+  "tasks/ht1": {"projectId": "hp1", "piId": "hpi1", "sprintId": "hsp1", "title": "Harness task A", "detail": "Add a line to a file.", "acceptance": "- File changed", "estTokens": 50000, "model": "sonnet", "kind": "code", "status": "todo", "order": 1, "deps": [], "createdAt": 1791300000000},
+  "tasks/ht2": {"projectId": "hp1", "piId": "hpi1", "sprintId": "hsp1", "title": "Harness task B", "detail": "Add another line.", "acceptance": "- File changed", "estTokens": 50000, "model": "sonnet", "kind": "code", "status": "todo", "order": 2, "deps": [], "createdAt": 1791300000000},
+  "ideas/hi1": {"title": "Harness idea A", "kind": "build", "status": "new", "context": "", "source": "manual", "projectId": "hp1", "createdAt": 1791300000000},
+  "ideas/hi2": {"title": "Harness idea B", "kind": "build", "status": "new", "context": "", "source": "manual", "projectId": "hp1", "createdAt": 1791300000000}
+}
