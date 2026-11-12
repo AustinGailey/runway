@@ -79,7 +79,7 @@ Not measured: a full unattended run with live agents, wall-clock time for real r
 
 ## Limits
 
-- **Built for one person on one Mac.** State lives in `~/.ai-planner` and the defaults assume macOS. A CI workflow is set up to run the tests on Linux, but it has not run on the public repo yet, and real use off macOS is untested.
+- **Built for one person on one Mac.** State lives in `~/.ai-planner` and the defaults assume macOS. CI runs the test suite on a macOS runner; several tests call macOS tools such as `caffeinate`, so the suite does not pass on Linux and real use off macOS is untested.
 - **The page expects a host.** It was written to run inside a Claude artifact that provides a database and a shell bridge. Outside that, this repo gives you the harness, which is a sandbox for trying and testing it, not a production host.
 - **The dollar cap is a launch gate, not a hard ceiling.** Autopilot checks projected cost before each launch. A task that runs far over its estimate can push spend past the cap.
 - **Estimates drift.** Token estimates are calibrated from past runs per model and task kind. With few runs the calibration is rough, and the run report flags drift rather than correcting for it mid-run.
